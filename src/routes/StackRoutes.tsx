@@ -2,7 +2,12 @@ import {Home} from "@/app/Home";
 import {Product} from "@/app/Product";
 import {createNativeStackNavigator} from "@react-navigation/native-stack";
 
-const Stack = createNativeStackNavigator()
+export type StackRoutesList = {
+    home: undefined;
+    product: undefined;
+}
+
+const Stack = createNativeStackNavigator<StackRoutesList>()
 
 export const StackRoutes = () => {
     return (
