@@ -7,7 +7,9 @@ import {
 
 export type StackRoutesList = {
   home: undefined;
-  product: undefined;
+  product: {
+    id: string;
+  };
 };
 
 export type StackRoutesProps<T extends keyof StackRoutesList> =
