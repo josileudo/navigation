@@ -1,10 +1,13 @@
 import { ButtonIcon } from "@/components/ButtonIcon";
 import { Header } from "@/components/Header";
 import { Title } from "@/components/Title";
-import { StackRoutesProps } from "@/routes/StackRoutes";
+import { BottomRoutesProps } from "@/routes/BottomRoutes";
 import { Text, View } from "react-native";
 
-export const Product = ({ navigation, route }: StackRoutesProps<"product">) => {
+export const Product = ({
+  navigation,
+  route,
+}: BottomRoutesProps<"product">) => {
   return (
     <View style={{ flex: 1, padding: 32, paddingTop: 54 }}>
       <Header>
@@ -15,7 +18,7 @@ export const Product = ({ navigation, route }: StackRoutesProps<"product">) => {
         <Title>Product</Title>
       </Header>
 
-      <Text>{route.params.id}</Text>
+      <Text>{route?.params?.id}</Text>
     </View>
   );
 };
