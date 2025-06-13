@@ -1,10 +1,10 @@
 import { NavigationContainer } from "@react-navigation/native";
-import { BottomRoutes } from "./BottomRoutes";
+import { DrawerRoutes } from "./DrawerRoutes";
 
 export const Routes = () => {
   return (
     <NavigationContainer>
-      <BottomRoutes />
+      <DrawerRoutes />
     </NavigationContainer>
   );
 };
